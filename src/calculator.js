@@ -6,7 +6,7 @@ const calculator = (() => {
   const multiply = (a, b) => a * b;
 
   return {
-    add, substract, divide, multiply
+    add, substract, divide, multiply,
   };
 })();
 
