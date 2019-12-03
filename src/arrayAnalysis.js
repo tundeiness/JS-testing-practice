@@ -1,4 +1,10 @@
+const ave = (arr) => {
+  const total = arr.reduce((item, accumulator) => accumulator + item, 0) / arr.length;
+  return total;
+};
+
 const analyze = (arr) => {
+
   const analysisObject = {
     average: null,
     min: null,
@@ -6,28 +12,10 @@ const analyze = (arr) => {
     length: null,
   };
 
-  function ave() {
-    const total = arr.reduce((accumulator, item) => accumulator + item, 0);
-    return total / 2;
-  }
-
-  function len() {
-    const size = arr.length;
-    return size;
-  }
-
-  function maxi() {
-    return Math.max(...arr);
-  }
-
-  function mini() {
-    return Math.min(...arr);
-  }
-
-  analysisObject.average = ave;
-  analysisObject.min = mini;
-  analysisObject.max = maxi;
-  analysisObject.length = len;
+  analysisObject.average = ave(arr);
+  analysisObject.min = Math.min(...arr);
+  analysisObject.max = Math.max(...arr);
+  analysisObject.length = arr.length;
 
   return analysisObject;
 };

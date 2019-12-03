@@ -1,3 +1,5 @@
+/* eslint-disable no-undef */
+
 const reverseStr = require('../src/reverseStr');
 
 test('Returns reversed string', () => {
