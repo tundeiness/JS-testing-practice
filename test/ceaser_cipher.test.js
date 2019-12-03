@@ -1,3 +1,5 @@
+/* eslint-disable no-undef */
+
 const ceaser = require('../src/ceaser_cipher');
 
 test('should return "Pm ol ohk hufaopun jvumpkluaphs av zhf" string', () => {

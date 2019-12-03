@@ -4,7 +4,6 @@ const ave = (arr) => {
 };
 
 const analyze = (arr) => {
-
   const analysisObject = {
     average: null,
     min: null,
